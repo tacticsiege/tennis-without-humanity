@@ -119,7 +119,7 @@ A key disadvantage of this implementation comes from the assumption that lets a 
 
 * P., Timothy, et al. “Continuous Control with Deep Reinforcement Learning.” ArXiv.org, 5 July 2019, arxiv.org/abs/1509.02971.
 * “Deterministic Policy Gradient Algorithms.” Deepmind, deepmind.com/research/publications/deterministic-policy-gradient-algorithms.
-* R., Lowe, et al. "Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments." ArXiv.org, 16 June 2018
+* R., Lowe, et al. "Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments." ArXiv.org, 16 June 2018, arxiv.org/abs/1706.02275.
 * Udacity Deep Reinforcement Learning Nanodegree Program, https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893.
 
 ## Additional Material
