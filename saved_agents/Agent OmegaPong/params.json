@@ -1,0 +1,1 @@
+{"name": "Agent OmegaPong", "buffer_size": 1000000, "batch_size": 256, "layers_actor": [512, 256], "layers_critic": [512, 256, 256], "lr_actor": 0.0005, "lr_critic": 0.001, "gamma": 0.99, "tau": 0.005, "weight_decay": 0.0, "learn_every": 5, "learn_passes": 5, "batch_norm": true}
