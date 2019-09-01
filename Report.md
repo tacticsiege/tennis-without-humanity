@@ -25,11 +25,11 @@ The following files are used for this implementation:
 
 Experiences of ```(state, action, reward, next_state, done)``` tuples are observed by each paddle every time step and stored in the same shared Experience Replay Buffer. The replay buffer uses the ```buffer_size``` hyperparameter to determine how many experiences it should keep before discarding or 'forgetting' the oldest. During learning, ```batch_size``` samples are selected uniformly at random and used for the update, using experiences from the multiple different arms.
 
-Support for index based sampling has been added but left unused for this implementation.  Index based sampling can be used when multiple agents have their own individual replay buffers to produced the experiences for the same time steps across many agents.
+Support for index based sampling has been added but left unused for this implementation.  Index based sampling can be used when multiple agents have their own individual replay buffers to produce the experiences for the same time steps across many agents.
 
 ### Weight Copying with Soft Update
 
-When copying the weights of the local network to the target network every ```copy_every``` time steps, a soft update method  was used instead of the original full copy method. The soft update introduces a new hyperparameter ```tau``` that controls the interpolation of target and local network weights used to update the target network, helping to stabilize training.
+When copying the weights of the local network to the target network every learning pass, a soft update method was used, intoducing a new hyperparameter ```tau``` that controls the interpolation of target and local network weights used to update the target network. This method of partial copying helps to stabilize training.
 
 ### Ornstein-Uhlenbeck Noise
 
